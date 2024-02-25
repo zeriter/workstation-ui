@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import path from "path-browserify";
-import {isExternal} from "@/utils/index";
+import { isExternal } from "@/utils/index";
 import AppLink from "./Link.vue";
-import {RouteRecordRaw} from "vue-router";
+import { RouteRecordRaw } from "vue-router";
 
 import Item from "./Item.vue";
 
@@ -63,7 +63,7 @@ function hasOneShowingChild(
 
   // 如果没有子路由，显示父级路由
   if (showingChildren.length === 0) {
-    onlyOneChild.value = {...parent, path: "", noShowingChildren: true};
+    onlyOneChild.value = { ...parent, path: "", noShowingChildren: true };
     return true;
   }
   return false;
@@ -134,5 +134,9 @@ function resolvePath(routePath: string) {
 <style lang="scss" scoped>
 :deep(.el-menu-item .el-menu-tooltip__trigger) {
   width: auto !important;
+}
+
+:deep(.el-menu-item:hover) {
+  background-color: var(--menuHover) !important;
 }
 </style>

@@ -5,12 +5,12 @@ const defaultSettings: AppSettings = {
   tagsView: false,
   fixedHeader: false,
   sidebarLogo: true,
-  layout: "left",
+  layout: "top",
   theme: "light",
   size: "default",
   language: "zh-cn",
   themeColor: "#409EFF",
-  watermark: {enabled: false, content: "有来技术"},
+  watermark: { enabled: false, content: "个人工作站" },
 };
 
 export default defaultSettings;
